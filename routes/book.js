@@ -1,9 +1,11 @@
 const express = require("express");
-const BookModel = require("../schema/book");
-const getBooks = require("../controller/getBooks");
-const addBook = require("../controller/addBook");
-const getBook = require("../controller/getBook");
-const updateBook = require("../controller/updateBook");
+
+const {
+  addBook,
+  getBooks,
+  getBook,
+  updateBook,
+} = require("../controller/BookController");
 
 const router = express.Router();
 router.get("/", async (req, res) => {
