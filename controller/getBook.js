@@ -1,5 +1,4 @@
-const BookModel = require("../models/book");
-
+const BookModel = require("../schema/book");
 const getBook = async (req, res) => {
   try {
     const reqId = req.params.id;

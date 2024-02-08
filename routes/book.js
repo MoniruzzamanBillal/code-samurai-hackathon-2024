@@ -1,5 +1,5 @@
 const express = require("express");
-const BookModel = require("../models/book");
+const BookModel = require("../schema/book");
 const getBooks = require("../controller/getBooks");
 const addBook = require("../controller/addBook");
 const getBook = require("../controller/getBook");

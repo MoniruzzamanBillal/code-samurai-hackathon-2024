@@ -1,5 +1,4 @@
-const BookModel = require("../models/book");
-
+const BookModel = require("../schema/book");
 const updateBook = async (req, res) => {
   try {
     const reqId = req.params.id;
@@ -8,9 +7,6 @@ const updateBook = async (req, res) => {
     const query = {
       id: reqId,
     };
-
-    // console.log(data);
-    // res.send({ message: "update route " });
 
     const result = await BookModel.findOneAndUpdate(
       query,
